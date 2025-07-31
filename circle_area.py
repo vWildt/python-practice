@@ -7,4 +7,4 @@ def area_circle(radius):
 if __name__ == "__main__":
     r = float(input("Enter the radius of the circle: "))
     area = area_circle(r)
-    print(f"The area is {area}")
+    print(f"The area is {area:.1f}")
