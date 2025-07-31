@@ -12,7 +12,7 @@ def fahrenheit_to_celsius(fahrenheit: float) -> float:
 if __name__ == "__main__":
     # Example usage
     temp_c = 0
-
+    print(f"{temp_c:.1f} \u00B0C = {celsius_to_fahrenheit(temp_c):.1f} \u00B0F")
 
     choice = input(
         "Convert (C)elsius to Fahrenheit or (F)ahrenheit to Celsius? "
@@ -27,6 +27,7 @@ if __name__ == "__main__":
             except ValueError:
                 print("Please enter a valid number.")
         result = celsius_to_fahrenheit(value)
+        print(f"{value:.1f} \u00B0C = {result:.1f} \u00B0F")
 
     elif choice == "F":
         while True:
@@ -37,6 +38,7 @@ if __name__ == "__main__":
             except ValueError:
                 print("Please enter a valid number.")
         result = fahrenheit_to_celsius(value)
+        print(f"{value:.1f} \u00B0F = {result:.1f} \u00B0C")
 
     else:
         print("Invalid option. Use 'C' or 'F'.")
